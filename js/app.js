@@ -50,39 +50,41 @@ function initializeAnimations(){
     ANIMATE SKILL BARS
 ==================================================*/
 
-function initializeSkillBars(){
+function initializeSkillBars() {
 
     const bars = document.querySelectorAll(".skill-fill");
 
-    const observer = new IntersectionObserver((entries)=>{
+    const observer = new IntersectionObserver((entries) => {
 
-        entries.forEach(entry=>{
+        entries.forEach(entry => {
 
-            if(!entry.isIntersecting) return;
+            if (!entry.isIntersecting) return;
 
-            const bar = entry.target;
+            bars.forEach((bar, index) => {
 
-            const width = bar.className.match(/fill-(\d+)/);
+                const width = bar.dataset.width;
 
-            if(width){
+                setTimeout(() => {
 
-                bar.style.width = "0";
+                    bar.style.width = width + "%";
 
-                requestAnimationFrame(()=>{
+                }, index * 180);
 
-                    bar.style.width = width[1] + "%";
+            });
 
-                });
-
-            }
-
-            observer.unobserve(bar);
+            observer.disconnect();
 
         });
 
+    }, {
+        threshold: 0.4
     });
 
-    bars.forEach(bar=>observer.observe(bar));
+    const skillsSection = document.querySelector(".sidebar-section:nth-of-type(3)");
+
+    if (skillsSection) {
+        observer.observe(skillsSection);
+    }
 
 }
 
