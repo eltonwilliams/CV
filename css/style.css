@@ -351,71 +351,22 @@ a:hover{
 
 .skill-fill{
 
+    width:0;
+
     height:100%;
 
     border-radius:30px;
 
     background:linear-gradient(
-            90deg,
-            #e67e22,
-            #ffb347
+        90deg,
+        #e67e22,
+        #ffb347
     );
 
-    transition:width 1.2s ease;
+    /* transition:width .9s cubic-bezier(.25,.8,.25,1); */
+    transition: width 1s cubic-bezier(.22, 1, .36, 1);
 
 }
-
-
-/* Skill percentages */
-
-.fill-95{
-
-    width:95%;
-
-}
-
-.fill-90{
-
-    width:90%;
-
-}
-
-.fill-85{
-
-    width:85%;
-
-}
-
-.fill-80{
-
-    width:80%;
-
-}
-
-.fill-75{
-
-    width:75%;
-
-}
-
-.fill-70{
-
-    width:70%;
-
-}
-
-.fill-65{
-
-    width:65%;
-
-}
-
-.fill-60{
-
-    width:60%;
-
-}
-
 
 /*==================================================
     CERTIFICATIONS
