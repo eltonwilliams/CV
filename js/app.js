@@ -209,7 +209,7 @@ function initializeTypingEffect(){
 
         }
 
-    },35);
+    },100);
 
 }
 
