@@ -3,13 +3,9 @@
     Digital CV
 ===================================================*/
 
-
-@page{
-
-    size:A4 portrait;
-
-    margin:12mm;
-
+@page {
+    size: A4 portrait;
+    margin: 8mm;
 }
 
 
@@ -17,18 +13,12 @@
     RESET
 ===================================================*/
 
-*{
-
-    background:transparent !important;
-
-    box-shadow:none !important;
-
-    text-shadow:none !important;
-
-    animation:none !important;
-
-    transition:none !important;
-
+* {
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    animation: none !important;
+    transition: none !important;
 }
 
 
@@ -37,18 +27,14 @@
 ===================================================*/
 
 html,
-body{
-
-    background:#ffffff !important;
-
-    color:#000 !important;
-
-    font-size:11pt;
-
-    line-height:1.45;
-
-    font-family:'Poppins',sans-serif;
-
+body {
+    background: #ffffff !important;
+    color: #000 !important;
+    font-size: 10pt;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -56,18 +42,14 @@ body{
     CONTAINER
 ===================================================*/
 
-.container{
-
-    display:flex;
-
-    width:100%;
-
-    margin:0;
-
-    padding:0;
-
-    box-shadow:none;
-
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    min-height: auto !important;
 }
 
 
@@ -75,28 +57,31 @@ body{
     SIDEBAR
 ===================================================*/
 
-.sidebar{
-
-    width:32%;
-
-    background:#efefef !important;
-
-    color:#000 !important;
-
-    padding:20px;
-
+.sidebar {
+    width: 30% !important;
+    background: #f0f0f0 !important;
+    color: #000 !important;
+    padding: 15px 18px !important;
+    float: left;
 }
 
-.sidebar *{
-
-    color:#000 !important;
-
+.sidebar * {
+    color: #000 !important;
 }
 
-.sidebar-section{
+.sidebar-section {
+    page-break-inside: avoid;
+    margin-bottom: 18px !important;
+}
 
-    page-break-inside:avoid;
+.sidebar-section h2 {
+    font-size: 11pt !important;
+    margin-bottom: 10px !important;
+    letter-spacing: 1px !important;
+}
 
+.sidebar-section h2::after {
+    display: none !important;
 }
 
 
@@ -104,40 +89,126 @@ body{
     PROFILE
 ===================================================*/
 
-.profile{
-
-    text-align:center;
-
-    margin-bottom:30px;
-
+.profile {
+    text-align: center;
+    margin-bottom: 18px !important;
 }
 
-.profile-photo{
-
-    width:130px;
-
-    height:130px;
-
-    border-radius:50%;
-
-    border:2px solid #666;
-
-    object-fit:cover;
-
+.profile-photo {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50%;
+    border: 2px solid #666 !important;
+    object-fit: cover;
+    margin-bottom: 10px !important;
 }
 
-.profile h1{
-
-    font-size:20pt;
-
-    margin-top:12px;
-
+.profile h1 {
+    font-size: 16pt !important;
+    margin-top: 8px !important;
+    margin-bottom: 2px !important;
+    color: #000 !important;
 }
 
-.job-title{
+.job-title {
+    font-size: 9pt !important;
+    color: #333 !important;
+}
 
-    font-size:11pt;
 
+/*==================================================
+    CONTACT
+===================================================*/
+
+.contact-list li {
+    font-size: 9pt !important;
+    margin-bottom: 6px !important;
+    color: #000 !important;
+}
+
+.contact-list i {
+    color: #555 !important;
+    width: 16px !important;
+}
+
+
+/*==================================================
+    EDUCATION
+===================================================*/
+
+.education-item {
+    margin-bottom: 12px !important;
+}
+
+.education-item .year {
+    font-size: 9pt !important;
+    color: #555 !important;
+}
+
+.education-item h3 {
+    font-size: 10pt !important;
+    color: #000 !important;
+}
+
+.education-item p {
+    font-size: 9pt !important;
+    color: #333 !important;
+}
+
+
+/*==================================================
+    SKILLS
+===================================================*/
+
+.skill {
+    margin-bottom: 10px !important;
+}
+
+.skill span {
+    font-size: 9pt !important;
+    color: #000 !important;
+    margin-bottom: 3px !important;
+}
+
+.skill-bar {
+    height: 5px !important;
+    background: #ddd !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
+.skill-fill {
+    background: #666 !important;
+    border-radius: 10px !important;
+    height: 100% !important;
+}
+
+
+/*==================================================
+    CERTIFICATIONS
+===================================================*/
+
+.cert-list li {
+    font-size: 9pt !important;
+    margin-bottom: 5px !important;
+    color: #000 !important;
+    padding-left: 16px !important;
+}
+
+.cert-list li::before {
+    display: none !important;
+}
+
+
+/*==================================================
+    LANGUAGES
+===================================================*/
+
+.language-list li {
+    font-size: 9pt !important;
+    padding: 4px 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.08) !important;
+    color: #000 !important;
 }
 
 
@@ -145,12 +216,10 @@ body{
     CONTENT
 ===================================================*/
 
-.content{
-
-    width:68%;
-
-    padding:20px;
-
+.content {
+    width: 70% !important;
+    padding: 15px 20px !important;
+    float: right;
 }
 
 
@@ -158,26 +227,25 @@ body{
     HERO
 ===================================================*/
 
-.hero{
-
-    margin-bottom:25px;
-
-    border-bottom:2px solid #999;
-
-    padding-bottom:15px;
-
+.hero {
+    margin-bottom: 15px !important;
+    border-bottom: 2px solid #999 !important;
+    padding-bottom: 10px !important;
 }
 
-.hero h1{
-
-    font-size:28pt;
-
+.hero h1 {
+    font-size: 22pt !important;
+    color: #000 !important;
+    margin-bottom: 2px !important;
 }
 
-.hero p{
+.hero h1 span {
+    color: #000 !important;
+}
 
-    font-size:12pt;
-
+.hero p {
+    font-size: 10pt !important;
+    color: #333 !important;
 }
 
 
@@ -185,30 +253,29 @@ body{
     HEADINGS
 ===================================================*/
 
-h2{
-
-    font-size:15pt;
-
-    margin-top:18px;
-
-    margin-bottom:10px;
-
-    border-bottom:1px solid #aaa;
-
-    padding-bottom:4px;
-
+h2 {
+    font-size: 12pt !important;
+    margin-top: 12px !important;
+    margin-bottom: 8px !important;
+    border-bottom: 1px solid #aaa !important;
+    padding-bottom: 3px !important;
+    color: #000 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
 }
 
-h3{
-
-    font-size:12pt;
-
+h2::after {
+    display: none !important;
 }
 
-h4{
+h3 {
+    font-size: 11pt !important;
+    color: #000 !important;
+}
 
-    font-size:11pt;
-
+h4 {
+    font-size: 10pt !important;
+    color: #333 !important;
 }
 
 
@@ -216,10 +283,11 @@ h4{
     PARAGRAPHS
 ===================================================*/
 
-p{
-
-    margin-bottom:10px;
-
+p {
+    margin-bottom: 6px !important;
+    font-size: 9.5pt !important;
+    color: #000 !important;
+    text-align: justify !important;
 }
 
 
@@ -227,16 +295,15 @@ p{
     LISTS
 ===================================================*/
 
-ul{
-
-    margin-left:20px;
-
+ul {
+    margin-left: 15px !important;
+    padding-left: 0 !important;
 }
 
-li{
-
-    margin-bottom:4px;
-
+li {
+    margin-bottom: 3px !important;
+    font-size: 9.5pt !important;
+    color: #000 !important;
 }
 
 
@@ -244,22 +311,50 @@ li{
     EXPERIENCE
 ===================================================*/
 
-.job{
-
-    margin-bottom:18px;
-
-    page-break-inside:avoid;
-
-    border-left:2px solid #777;
-
-    padding-left:18px;
-
+.job {
+    margin-bottom: 14px !important;
+    page-break-inside: avoid;
+    border-left: 2px solid #777 !important;
+    padding-left: 14px !important;
+    position: relative !important;
 }
 
-.job::before{
+.job::before {
+    display: none !important;
+}
 
-    display:none;
+.job-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: baseline !important;
+    flex-wrap: wrap !important;
+    margin-bottom: 3px !important;
+}
 
+.job-header h3 {
+    font-size: 11pt !important;
+    color: #000 !important;
+}
+
+.job-header span {
+    font-size: 9pt !important;
+    color: #555 !important;
+}
+
+.job h4 {
+    font-size: 9.5pt !important;
+    color: #444 !important;
+    margin-bottom: 5px !important;
+}
+
+.job ul {
+    margin-left: 15px !important;
+}
+
+.job li {
+    font-size: 9pt !important;
+    margin-bottom: 2px !important;
+    color: #000 !important;
 }
 
 
@@ -267,16 +362,23 @@ li{
     PROJECTS
 ===================================================*/
 
-.project{
+.project {
+    border: 1px solid #ccc !important;
+    padding: 10px 12px !important;
+    margin-bottom: 10px !important;
+    page-break-inside: avoid;
+    border-left: 3px solid #888 !important;
+    border-radius: 0 !important;
+}
 
-    border:1px solid #ccc;
+.project h3 {
+    font-size: 10.5pt !important;
+    margin-bottom: 3px !important;
+}
 
-    padding:12px;
-
-    margin-bottom:12px;
-
-    page-break-inside:avoid;
-
+.project p {
+    font-size: 9pt !important;
+    margin: 0 !important;
 }
 
 
@@ -284,24 +386,20 @@ li{
     TECH GRID
 ===================================================*/
 
-.tech-grid{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    gap:6px;
-
+.tech-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 4px !important;
+    grid-template-columns: none !important;
 }
 
-.tech-grid span{
-
-    border:1px solid #888;
-
-    padding:5px 10px;
-
-    font-size:10pt;
-
+.tech-grid span {
+    border: 1px solid #888 !important;
+    padding: 3px 8px !important;
+    font-size: 8.5pt !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: #000 !important;
 }
 
 
@@ -309,47 +407,81 @@ li{
     STRENGTHS
 ===================================================*/
 
-.strength-list{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:6px;
-
+.strength-list {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4px !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-.strength-list li{
-
-    border:1px solid #ccc;
-
-    padding:8px;
-
+.strength-list li {
+    border: 1px solid #ccc !important;
+    padding: 5px 8px !important;
+    font-size: 9pt !important;
+    background: transparent !important;
+    border-left: 3px solid #888 !important;
+    border-radius: 0 !important;
+    color: #000 !important;
 }
 
 
 /*==================================================
-    SKILL BARS
+    REFERENCES
 ===================================================*/
 
-.skill{
-
-    margin-bottom:12px;
-
+.reference-card {
+    border: 1px solid #ccc !important;
+    border-left: 3px solid #888 !important;
+    padding: 10px 12px !important;
+    margin-bottom: 10px !important;
+    page-break-inside: avoid;
+    border-radius: 0 !important;
+    background: transparent !important;
 }
 
-.skill-bar{
-
-    height:7px;
-
-    background:#ddd !important;
-
+.reference-card h3 {
+    font-size: 10.5pt !important;
+    margin-bottom: 2px !important;
 }
 
-.skill-fill{
+.reference-card h4 {
+    font-size: 9pt !important;
+    margin-bottom: 2px !important;
+}
 
-    background:#666 !important;
+.reference-card p {
+    font-size: 9pt !important;
+    margin-bottom: 5px !important;
+}
 
+.reference-details {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.reference-details li {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    font-size: 9pt !important;
+    margin-bottom: 3px !important;
+}
+
+.reference-details i {
+    width: 14px !important;
+    color: #555 !important;
+}
+
+
+/*==================================================
+    SKILL BARS - OVERRIDE WIDTH FOR PRINT
+===================================================*/
+
+.skill-fill[data-width] {
+    width: attr(data-width) !important;
 }
 
 
@@ -357,18 +489,13 @@ li{
     LINKS
 ===================================================*/
 
-a{
-
-    color:#000 !important;
-
-    text-decoration:none;
-
+a {
+    color: #000 !important;
+    text-decoration: none !important;
 }
 
-a::after{
-
-    content:"";
-
+a::after {
+    content: "" !important;
 }
 
 
@@ -376,10 +503,8 @@ a::after{
     ICONS
 ===================================================*/
 
-i{
-
-    color:#555 !important;
-
+i {
+    color: #555 !important;
 }
 
 
@@ -387,28 +512,20 @@ i{
     HIDE ELEMENTS
 ===================================================*/
 
-.no-print{
-
-    display:none !important;
-
+.no-print {
+    display: none !important;
 }
 
-button{
-
-    display:none !important;
-
+button {
+    display: none !important;
 }
 
-nav{
-
-    display:none !important;
-
+nav {
+    display: none !important;
 }
 
-footer{
-
-    display:none !important;
-
+footer {
+    display: none !important;
 }
 
 
@@ -416,10 +533,8 @@ footer{
     SHOW PRINT ELEMENTS
 ===================================================*/
 
-.print-only{
-
-    display:block !important;
-
+.print-only {
+    display: block !important;
 }
 
 
@@ -427,34 +542,29 @@ footer{
     PAGE BREAKS
 ===================================================*/
 
-section{
-
-    page-break-inside:avoid;
-
+section {
+    page-break-inside: avoid;
 }
 
-.project{
-
-    page-break-inside:avoid;
-
+.project {
+    page-break-inside: avoid;
 }
 
-.job{
-
-    page-break-inside:avoid;
-
+.job {
+    page-break-inside: avoid;
 }
 
-.education-item{
-
-    page-break-inside:avoid;
-
+.education-item {
+    page-break-inside: avoid;
 }
 
-.sidebar-section{
+.sidebar-section {
+    page-break-inside: avoid;
+}
 
-    page-break-inside:avoid;
-
+/* Force a page break before references if needed */
+section:last-child {
+    page-break-before: auto;
 }
 
 
@@ -462,10 +572,8 @@ section{
     IMAGES
 ===================================================*/
 
-img{
-
-    max-width:100%;
-
+img {
+    max-width: 100%;
 }
 
 
@@ -474,12 +582,9 @@ img{
 ===================================================*/
 
 p,
-li{
-
-    orphans:3;
-
-    widows:3;
-
+li {
+    orphans: 3;
+    widows: 3;
 }
 
 
@@ -487,8 +592,16 @@ li{
     LAST ELEMENT
 ===================================================*/
 
-section:last-child{
+section:last-child {
+    margin-bottom: 0;
+}
 
-    margin-bottom:0;
+/*==================================================
+    CLEARFIX FOR FLOATS
+===================================================*/
 
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
 }
