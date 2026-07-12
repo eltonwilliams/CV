@@ -1,0 +1,494 @@
+/*==================================================
+    PRINT STYLESHEET
+    Digital CV
+===================================================*/
+
+
+@page{
+
+    size:A4 portrait;
+
+    margin:12mm;
+
+}
+
+
+/*==================================================
+    RESET
+===================================================*/
+
+*{
+
+    background:transparent !important;
+
+    box-shadow:none !important;
+
+    text-shadow:none !important;
+
+    animation:none !important;
+
+    transition:none !important;
+
+}
+
+
+/*==================================================
+    BODY
+===================================================*/
+
+html,
+body{
+
+    background:#ffffff !important;
+
+    color:#000 !important;
+
+    font-size:11pt;
+
+    line-height:1.45;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+/*==================================================
+    CONTAINER
+===================================================*/
+
+.container{
+
+    display:flex;
+
+    width:100%;
+
+    margin:0;
+
+    padding:0;
+
+    box-shadow:none;
+
+}
+
+
+/*==================================================
+    SIDEBAR
+===================================================*/
+
+.sidebar{
+
+    width:32%;
+
+    background:#efefef !important;
+
+    color:#000 !important;
+
+    padding:20px;
+
+}
+
+.sidebar *{
+
+    color:#000 !important;
+
+}
+
+.sidebar-section{
+
+    page-break-inside:avoid;
+
+}
+
+
+/*==================================================
+    PROFILE
+===================================================*/
+
+.profile{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.profile-photo{
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    border:2px solid #666;
+
+    object-fit:cover;
+
+}
+
+.profile h1{
+
+    font-size:20pt;
+
+    margin-top:12px;
+
+}
+
+.job-title{
+
+    font-size:11pt;
+
+}
+
+
+/*==================================================
+    CONTENT
+===================================================*/
+
+.content{
+
+    width:68%;
+
+    padding:20px;
+
+}
+
+
+/*==================================================
+    HERO
+===================================================*/
+
+.hero{
+
+    margin-bottom:25px;
+
+    border-bottom:2px solid #999;
+
+    padding-bottom:15px;
+
+}
+
+.hero h1{
+
+    font-size:28pt;
+
+}
+
+.hero p{
+
+    font-size:12pt;
+
+}
+
+
+/*==================================================
+    HEADINGS
+===================================================*/
+
+h2{
+
+    font-size:15pt;
+
+    margin-top:18px;
+
+    margin-bottom:10px;
+
+    border-bottom:1px solid #aaa;
+
+    padding-bottom:4px;
+
+}
+
+h3{
+
+    font-size:12pt;
+
+}
+
+h4{
+
+    font-size:11pt;
+
+}
+
+
+/*==================================================
+    PARAGRAPHS
+===================================================*/
+
+p{
+
+    margin-bottom:10px;
+
+}
+
+
+/*==================================================
+    LISTS
+===================================================*/
+
+ul{
+
+    margin-left:20px;
+
+}
+
+li{
+
+    margin-bottom:4px;
+
+}
+
+
+/*==================================================
+    EXPERIENCE
+===================================================*/
+
+.job{
+
+    margin-bottom:18px;
+
+    page-break-inside:avoid;
+
+    border-left:2px solid #777;
+
+    padding-left:18px;
+
+}
+
+.job::before{
+
+    display:none;
+
+}
+
+
+/*==================================================
+    PROJECTS
+===================================================*/
+
+.project{
+
+    border:1px solid #ccc;
+
+    padding:12px;
+
+    margin-bottom:12px;
+
+    page-break-inside:avoid;
+
+}
+
+
+/*==================================================
+    TECH GRID
+===================================================*/
+
+.tech-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:6px;
+
+}
+
+.tech-grid span{
+
+    border:1px solid #888;
+
+    padding:5px 10px;
+
+    font-size:10pt;
+
+}
+
+
+/*==================================================
+    STRENGTHS
+===================================================*/
+
+.strength-list{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:6px;
+
+}
+
+.strength-list li{
+
+    border:1px solid #ccc;
+
+    padding:8px;
+
+}
+
+
+/*==================================================
+    SKILL BARS
+===================================================*/
+
+.skill{
+
+    margin-bottom:12px;
+
+}
+
+.skill-bar{
+
+    height:7px;
+
+    background:#ddd !important;
+
+}
+
+.skill-fill{
+
+    background:#666 !important;
+
+}
+
+
+/*==================================================
+    LINKS
+===================================================*/
+
+a{
+
+    color:#000 !important;
+
+    text-decoration:none;
+
+}
+
+a::after{
+
+    content:"";
+
+}
+
+
+/*==================================================
+    ICONS
+===================================================*/
+
+i{
+
+    color:#555 !important;
+
+}
+
+
+/*==================================================
+    HIDE ELEMENTS
+===================================================*/
+
+.no-print{
+
+    display:none !important;
+
+}
+
+button{
+
+    display:none !important;
+
+}
+
+nav{
+
+    display:none !important;
+
+}
+
+footer{
+
+    display:none !important;
+
+}
+
+
+/*==================================================
+    SHOW PRINT ELEMENTS
+===================================================*/
+
+.print-only{
+
+    display:block !important;
+
+}
+
+
+/*==================================================
+    PAGE BREAKS
+===================================================*/
+
+section{
+
+    page-break-inside:avoid;
+
+}
+
+.project{
+
+    page-break-inside:avoid;
+
+}
+
+.job{
+
+    page-break-inside:avoid;
+
+}
+
+.education-item{
+
+    page-break-inside:avoid;
+
+}
+
+.sidebar-section{
+
+    page-break-inside:avoid;
+
+}
+
+
+/*==================================================
+    IMAGES
+===================================================*/
+
+img{
+
+    max-width:100%;
+
+}
+
+
+/*==================================================
+    AVOID ORPHANS
+===================================================*/
+
+p,
+li{
+
+    orphans:3;
+
+    widows:3;
+
+}
+
+
+/*==================================================
+    LAST ELEMENT
+===================================================*/
+
+section:last-child{
+
+    margin-bottom:0;
+
+}
