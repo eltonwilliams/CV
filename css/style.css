@@ -1385,6 +1385,92 @@ table td{
 
 }
 
+/*==================================================
+    REFERENCES
+===================================================*/
+
+.reference-card{
+
+    background:#fafafa;
+
+    border-left:5px solid var(--primary);
+
+    border-radius:8px;
+
+    padding:22px;
+
+    margin-bottom:20px;
+
+    transition:.3s;
+
+}
+
+.reference-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.reference-card h3{
+
+    font-size:20px;
+
+    color:var(--heading);
+
+    margin-bottom:5px;
+
+}
+
+.reference-card h4{
+
+    font-size:15px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    margin-bottom:5px;
+
+}
+
+.reference-card p{
+
+    margin-bottom:15px;
+
+    color:#666;
+
+}
+
+.reference-details{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.reference-details li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:8px;
+
+}
+
+.reference-details i{
+
+    width:20px;
+
+    color:var(--primary);
+
+}
+
 
 /*==================================================
     END
