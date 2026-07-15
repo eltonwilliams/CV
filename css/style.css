@@ -883,6 +883,8 @@ a:hover{
 
     background:var(--primary-dark);
 
+    color:#fff;
+
     transform:translateY(-2px);
 
     box-shadow:0 10px 25px rgba(0,0,0,.15);
@@ -1419,6 +1421,61 @@ table td{
     width:20px;
 
     color:var(--primary);
+
+}
+
+/*==================================================
+    HERO BUTTONS
+===================================================*/
+
+.hero-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+.hero-buttons .btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    min-width:180px;
+
+    height:48px;
+
+    padding:0 24px;
+
+    font-weight:500;
+
+}
+
+
+/*==================================================
+    LINKEDIN
+===================================================*/
+
+.btn-linkedin{
+
+    background:#0077B5;
+
+}
+
+.btn-linkedin:hover{
+
+    background:#005E93;
 
 }
 
